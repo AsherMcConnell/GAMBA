@@ -11,7 +11,7 @@ import SwiftUI
 struct GAMBAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PokerGameView()
         }
     }
 }

@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6A14722AAA56CC009BB200 /* PokerGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A14712AAA56CC009BB200 /* PokerGameView.swift */; };
+		FA6A14742AAA597A009BB200 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A14732AAA597A009BB200 /* Deck.swift */; };
+		FA6A14762AAA5B72009BB200 /* PokerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A14752AAA5B72009BB200 /* PokerViewModel.swift */; };
 		FA7742882AA9329900618B42 /* GAMBAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7742872AA9329900618B42 /* GAMBAApp.swift */; };
-		FA77428A2AA9329900618B42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7742892AA9329900618B42 /* ContentView.swift */; };
 		FA77428C2AA9329B00618B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA77428B2AA9329B00618B42 /* Assets.xcassets */; };
 		FA77428F2AA9329B00618B42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA77428E2AA9329B00618B42 /* Preview Assets.xcassets */; };
+		FA7742992AA9375000618B42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7742982AA9375000618B42 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6A14712AAA56CC009BB200 /* PokerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameView.swift; sourceTree = "<group>"; };
+		FA6A14732AAA597A009BB200 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		FA6A14752AAA5B72009BB200 /* PokerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerViewModel.swift; sourceTree = "<group>"; };
 		FA7742842AA9329900618B42 /* GAMBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAMBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7742872AA9329900618B42 /* GAMBAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMBAApp.swift; sourceTree = "<group>"; };
-		FA7742892AA9329900618B42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA77428B2AA9329B00618B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA77428E2AA9329B00618B42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA7742982AA9375000618B42 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		FA7742862AA9329900618B42 /* GAMBA */ = {
 			isa = PBXGroup;
 			children = (
+				FA7742952AA9339500618B42 /* Model */,
+				FA7742962AA9339D00618B42 /* ViewModel */,
+				FA7742972AA933A300618B42 /* View */,
 				FA7742872AA9329900618B42 /* GAMBAApp.swift */,
-				FA7742892AA9329900618B42 /* ContentView.swift */,
 				FA77428B2AA9329B00618B42 /* Assets.xcassets */,
 				FA77428D2AA9329B00618B42 /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				FA77428E2AA9329B00618B42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA7742952AA9339500618B42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A14732AAA597A009BB200 /* Deck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA7742962AA9339D00618B42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A14752AAA5B72009BB200 /* PokerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA7742972AA933A300618B42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A14712AAA56CC009BB200 /* PokerGameView.swift */,
+				FA7742982AA9375000618B42 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA77428A2AA9329900618B42 /* ContentView.swift in Sources */,
+				FA6A14742AAA597A009BB200 /* Deck.swift in Sources */,
+				FA7742992AA9375000618B42 /* LoginView.swift in Sources */,
 				FA7742882AA9329900618B42 /* GAMBAApp.swift in Sources */,
+				FA6A14762AAA5B72009BB200 /* PokerViewModel.swift in Sources */,
+				FA6A14722AAA56CC009BB200 /* PokerGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
