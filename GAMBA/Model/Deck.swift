@@ -32,6 +32,8 @@ struct Card: Codable {
     let value: String
     let suit: String
     
+    var isFlipped: Bool?
+        
     struct Image: Codable {
         let svg: String
         let png: String
