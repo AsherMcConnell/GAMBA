@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PokerViewModel: ObservableObject {
+class BlackJackViewModel: ObservableObject {
     
     @Published var currentDeck: Deck? = nil
     @Published var drawCards: CardsDrawn?
