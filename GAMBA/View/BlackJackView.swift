@@ -83,6 +83,7 @@ extension BlackJackView {
                 .position(x: 400, y: 0)
                 //
                 ZStack {
+                    RoundedRectangle(cornerRadius: 10)
                         .frame(width: 250, height: 45)
                     if blackJackVM.playerTurns[0] == 6 {
                         Text("Dealer Flop")
