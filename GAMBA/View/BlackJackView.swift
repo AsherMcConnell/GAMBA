@@ -35,7 +35,6 @@ struct BlackJackView: View {
             }
         }
         .task {
-            await blackJackVM.getNewDeck()
         }
     }
 }
@@ -212,6 +211,9 @@ extension BlackJackView {
                             player4Color = .white
                             player5Color = .white
                             dealerColor = .white
+                            Task {
+                                await blackJackVM.getNewDeck()
+                            }
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                                 newRoundOpacity = 0
                                 Task {
@@ -236,7 +238,7 @@ extension BlackJackView {
                         } label: {
                             Text("NEW ROUND")
                                 .font(.largeTitle)
-                                .foregroundColor(.red)
+                                .foregroundColor(.green)
                                 
                         }
                     }
@@ -283,7 +285,7 @@ extension BlackJackView {
                 } label: {
                     Text("STAND")
                         .font(.largeTitle)
-                        .foregroundColor(.orange)
+                        .foregroundColor(.yellow)
                 }
             }
         }
