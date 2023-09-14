@@ -33,9 +33,19 @@ struct Card: Codable {
     let suit: String
     
     var isFlipped: Bool?
+    var positionX: CGFloat?
+    var positionY: CGFloat?
         
     struct Image: Codable {
         let svg: String
         let png: String
     }
+}
+enum Player {
+    case player1
+    case player2
+    case player3
+    case player4
+    case player5
+    case dealer
 }
